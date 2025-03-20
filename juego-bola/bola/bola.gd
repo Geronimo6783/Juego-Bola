@@ -1,4 +1,4 @@
-extends Area2D
+extends RigidBody2D
 
 ## Función que se procesa por cada fotograma.
 func _process(delta: float):

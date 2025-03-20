@@ -1,6 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c34gk3mrf3uww"]
+[gd_scene load_steps=5 format=3 uid="uid://c34gk3mrf3uww"]
 
 [ext_resource type="Texture2D" uid="uid://dce5lddfcl1mg" path="res://terreno/terreno.svg" id="1_tot3y"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_o3i2r"]
+rough = true
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_otlm6"]
 size = Vector2(401, 188)
@@ -8,7 +11,8 @@ size = Vector2(401, 188)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hs4am"]
 size = Vector2(612, 227)
 
-[node name="Terreno" type="Area2D"]
+[node name="Terreno" type="StaticBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_o3i2r")
 
 [node name="Textura" type="Sprite2D" parent="."]
 texture = ExtResource("1_tot3y")

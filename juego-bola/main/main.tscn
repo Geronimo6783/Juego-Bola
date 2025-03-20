@@ -10,13 +10,13 @@
 script = ExtResource("1_3wy1v")
 
 [node name="Terreno" parent="." instance=ExtResource("1_xwkvk")]
-position = Vector2(507, 436)
+position = Vector2(972, 963)
 
 [node name="Bola" parent="." instance=ExtResource("2_c651c")]
-position = Vector2(55, 311)
+position = Vector2(529, 827)
 
 [node name="Bandera" parent="." instance=ExtResource("3_3wy1v")]
-position = Vector2(955, 208)
+position = Vector2(1417, 733)
 
 [node name="CanvasLayer" parent="." instance=ExtResource("5_kfbq2")]
 

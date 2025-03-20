@@ -1,17 +1,26 @@
-[gd_scene load_steps=4 format=3 uid="uid://cpi08slsdxcp"]
+[gd_scene load_steps=5 format=3 uid="uid://cpi08slsdxcp"]
 
 [ext_resource type="Texture2D" uid="uid://cyuatrado001q" path="res://bola/bola.svg" id="1_kbkrr"]
 [ext_resource type="Script" uid="uid://tkvy403a8a70" path="res://bola/bola.gd" id="1_nik13"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_nik13"]
+rough = true
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_nik13"]
 radius = 48.0937
 
-[node name="Bola" type="Area2D"]
+[node name="Bola" type="RigidBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_nik13")
 script = ExtResource("1_nik13")
 
-[node name="Textura" type="Sprite2D" parent="."]
+[node name="Colision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_nik13")
+
+[node name="Area" type="Area2D" parent="."]
+
+[node name="Textura" type="Sprite2D" parent="Area"]
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("1_kbkrr")
 
-[node name="Colision" type="CollisionShape2D" parent="."]
+[node name="Colision" type="CollisionShape2D" parent="Area"]
 shape = SubResource("CircleShape2D_nik13")
