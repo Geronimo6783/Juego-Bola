@@ -5,6 +5,7 @@
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_nik13"]
 rough = true
+bounce = 0.1
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nik13"]
 radius = 48.0937

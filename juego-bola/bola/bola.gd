@@ -3,8 +3,8 @@ extends RigidBody2D
 ## Función que se procesa por cada fotograma.
 func _process(delta: float):
 	if Input.is_action_pressed("izquierda"):
-		position.x -= 3
+		move_and_collide(Vector2(-3,0))
 	if Input.is_action_pressed("derecha"):
-		position.x += 3
+		move_and_collide(Vector2(3,0))
 	if Input.is_action_pressed("arriba"):
-		position.y -= 3
+		move_and_collide(Vector2(0,-3))
