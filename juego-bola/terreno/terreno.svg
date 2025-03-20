@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="268.16043mm"
+   height="60.341648mm"
+   viewBox="0 0 268.16043 60.341648"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb, 2024-10-09)"
+   sodipodi:docname="terreno.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.71268238"
+     inkscape:cx="319.21654"
+     inkscape:cy="-47.707087"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(40.094997,-161.2946)">
+    <g
+       id="g2">
+      <rect
+         style="fill:#00ff00;stroke-width:0.250901"
+         id="rect1"
+         width="106.54875"
+         height="50.118748"
+         x="-40.094997"
+         y="171.5175" />
+      <rect
+         style="fill:#00ff00;stroke-width:0.338762"
+         id="rect1-5"
+         width="161.86501"
+         height="60.142498"
+         x="66.200417"
+         y="161.2946" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://duf6r0oigd2cv"]
+
+[ext_resource type="Script" uid="uid://xl6rwnu2hpwi" path="res://meta/bandera.gd" id="1_l7ejc"]
+[ext_resource type="Texture2D" uid="uid://cw2lpqdxxp7if" path="res://meta/bandera.svg" id="1_tnoc7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l7ejc"]
+size = Vector2(90, 226)
+
+[node name="Bandera" type="Area2D"]
+script = ExtResource("1_l7ejc")
+
+[node name="Textura" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_tnoc7")
+
+[node name="Colision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_l7ejc")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

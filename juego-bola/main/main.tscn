@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://cxljl0j6jdhbj"]
+
+[ext_resource type="Script" uid="uid://b6gne7j0knd4b" path="res://main/main.gd" id="1_3wy1v"]
+[ext_resource type="PackedScene" uid="uid://c34gk3mrf3uww" path="res://terreno/terreno.tscn" id="1_xwkvk"]
+[ext_resource type="PackedScene" uid="uid://cpi08slsdxcp" path="res://bola/bola.tscn" id="2_c651c"]
+[ext_resource type="PackedScene" uid="uid://duf6r0oigd2cv" path="res://meta/bandera.tscn" id="3_3wy1v"]
+[ext_resource type="PackedScene" uid="uid://wwe061wpld8e" path="res://mensaje/mensaje.tscn" id="5_kfbq2"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_3wy1v")
+
+[node name="Terreno" parent="." instance=ExtResource("1_xwkvk")]
+position = Vector2(507, 436)
+
+[node name="Bola" parent="." instance=ExtResource("2_c651c")]
+position = Vector2(55, 311)
+
+[node name="Bandera" parent="." instance=ExtResource("3_3wy1v")]
+position = Vector2(955, 208)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("5_kfbq2")]
+
+[connection signal="tocado" from="Bandera" to="." method="_on_bandera_tocado"]
